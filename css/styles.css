@@ -10,20 +10,25 @@ aside {
 	text-align: center;
 }
 .language-toggle {
-	position: relative;
+	position: absolute;
 	right: 5px;
 }
 
 section {
-	padding-left: 0px;
-	padding-right: 0px;
 	margin: 10px;
 	border: 3px solid gray;
 	border-radius: 25px;
-}
+	width: 50%;
+}/*
 header {
 	background-image: url('../img/Dresden.jpg');
+*/
+footer {
+	background-color: rgba(230, 230, 230, 0.9);
+	text-align: center;
+	position: fixed;
+	bottom: 0;
 }
-.navbar {
-	background-color: rgba(0, 0, 0, 0.5);
+aside {
+	padding-left: 50px;
 }
