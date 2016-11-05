@@ -1,6 +1,6 @@
 body {
 	background-color: rgb(225, 230, 240);
-
+	
 }
 
 h1 {
@@ -38,9 +38,9 @@ section {
 	background-color: white;
 }
 header {
-	/*border: 2px solid black;*/
+	padding: 1em 0;
 	background-color: rgb(245, 245, 200);
-
+	margin-bottom: 1em;
 }
 
 @media all and (min-width: 1244px){
@@ -69,9 +69,6 @@ img {
 }
 .navbar-nav {
 	float: none;
-	margin: 0 auto;
 	background-color: rgba(230, 230, 230, 0.9); 
 }
-ul {
-	margin: 0 auto;
-}
+
