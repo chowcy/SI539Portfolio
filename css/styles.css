@@ -52,17 +52,28 @@ header {
     }
 }
 footer {
-	background-color: rgba(230, 230, 230, 0.9);
-	text-align: center;
-	position: fixed;
+	background-color: rgba(225, 190, 240, 0.9);
 	bottom: 0;
+	clear: both;
+	padding-bottom: 1em;
+}
+footer a {
+	font-size: 2em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgba(0, 119, 181, 1);
+	padding: 0 1em;
+}
+footer a:hover {
+	text-decoration: none;
 }
 aside {
 	padding-left: 50px;
+	margin: 0 auto;
 }
 img {
 	margin: 0em auto 2em auto;
 	border: 3px solid gray;
+	padding: 0;
 }
 .book-title {
 	font-style: italic;
@@ -71,4 +82,14 @@ img {
 	float: none;
 	background-color: rgba(230, 230, 230, 0.9); 
 }
+.gallery-image {
+	margin: 5px;
+	padding: 0;
+}
+.external-links li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+
 
