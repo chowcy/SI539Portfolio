@@ -85,7 +85,11 @@ header {
     	content: " Download ";
     }
     #skiptomain:focus {
+    	background-color: white;
+    	color: black;
+    	font-weight: bold;
     	top: 0px;
+    	padding: 1em;
     }
 
 }
@@ -105,8 +109,7 @@ footer a:hover {
 	text-decoration: none;
 }
 aside {
-	padding-left: 20px;
-	display: inline;
+	margin: 0 auto;
 }
 img {
 	margin: 0em auto 2em auto;
