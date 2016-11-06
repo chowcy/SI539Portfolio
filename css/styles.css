@@ -1,6 +1,5 @@
 body {
 	background-color: rgb(225, 230, 240);
-	
 }
 
 h1 {
@@ -57,7 +56,8 @@ header {
     }
 }
 footer {
-	background-color: rgba(225, 190, 240, 0.9);
+	border-top: 2px solid black;
+	background-color: rgba(230, 230, 230, 0.9);
 	bottom: 0;
 }
 footer a {
@@ -100,7 +100,10 @@ iframe {
 	list-style-type: none;
 	display: inline-block;
 }
-
-
+.icon {
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
 
 
