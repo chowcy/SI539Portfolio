@@ -12,7 +12,9 @@ h1 {
 h2, h3 {
 	text-align: center;
 }
-
+h3 {
+	text-decoration: underline;
+}
 h5 {
 	font-style: italic;
 }
@@ -82,6 +84,9 @@ header {
     #resume:before {
     	content: " Download ";
     }
+    #skiptomain:focus {
+    	top: 0px;
+    }
 
 }
 footer {
@@ -138,3 +143,7 @@ iframe {
 }
 
 
+#skiptomain{
+	position: absolute;
+	top: -30px;
+}
