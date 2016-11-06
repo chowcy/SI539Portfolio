@@ -22,7 +22,7 @@ h5 {
 	font-weight: 900;
 	text-transform: uppercase;
 	color: black;
-	background-color: rgba(230, 230, 230, 0.9);
+	background-color: white;
 	text-shadow: 2px 2px #888888;
 }
 aside {
@@ -35,8 +35,8 @@ aside {
 
 section {
 	border: 1px solid gray;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin-bottom: 25px;
 	color: black;
 	background-color: rgba(245, 245, 200, 0.5);
@@ -53,7 +53,7 @@ header {
 		background-image: 
 		linear-gradient(rgba(255, 255, 255, 0.5),
     					rgba(255, 255, 255, 0.5)), 
-    	url('../img/Dresden.jpg');
+    	url('../img/dresden.jpg');
     }
     #en:after{
     	content: "EN";
@@ -65,12 +65,6 @@ header {
 }
 /*for large screens*/
 @media all and (min-width: 1244px){
-	header{
-		background-image: 
-		linear-gradient(rgba(255, 255, 255, 0.5),
-    					rgba(255, 255, 255, 0.5)), 
-    	url('../img/Dresden.jpg');
-    }
     #en:after{
     	content: "ENGLISH";
     }
@@ -148,4 +142,15 @@ iframe {
 #skiptomain{
 	position: absolute;
 	top: -30px;
+}
+.contact-wrapper {
+	font-size: 20px;
+}
+
+#contactpic {
+	margin: 0 auto 2em auto;
+	box-shadow: none;
+}
+#contactinfo {
+	text-align: center;
 }
