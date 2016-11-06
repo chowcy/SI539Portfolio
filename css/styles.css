@@ -4,6 +4,7 @@ body {
 }
 
 h1 {
+	text-shadow: 2px 2px #888888;
 	padding: 10%;
 	text-align: center;
 	font-weight: bolder;
@@ -21,6 +22,7 @@ h5 {
 	text-transform: uppercase;
 	color: black;
 	background-color: rgba(230, 230, 230, 0.9);
+	text-shadow: 2px 2px #888888;
 }
 aside {
 	text-align: center;
@@ -31,12 +33,14 @@ aside {
 }
 
 section {
-	border: 3px solid gray;
-	border-radius: 25px;
+	border: 1px solid gray;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-bottom: 25px;
+	background-image: 		linear-gradient(rgba(230, 230, 230, 0.5),
+    					rgba(255, 255, 255, 0.5));
 	background-color: white;
+	box-shadow: 5px 5px 1px #888888;
 }
 header {
 	padding: 1em 0;
@@ -71,8 +75,14 @@ aside {
 }
 img {
 	margin: 0em auto 2em auto;
-	border: 3px solid gray;
+	border: 2px solid gray;
 	padding: 0;
+	box-shadow: 2px 2px 1px #888888;
+}
+iframe {
+	margin: 1em auto;
+	display: block;
+	box-shadow: 5px 5px 1px #888888;
 }
 .book-title {
 	font-style: italic;
@@ -81,6 +91,7 @@ img {
 	float: none;
 	background-color: rgba(230, 230, 230, 0.9); 
 }
+
 .external-links {
 	margin: 0 auto;
 	text-align: center;
