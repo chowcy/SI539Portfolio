@@ -46,7 +46,23 @@ header {
 	background-color: rgb(245, 245, 200);
 	margin-bottom: 1em;
 }
+/*for medium/tablet screens*/
+@media all and (min-width: 768px){
+	header{
+		background-image: 
+		linear-gradient(rgba(255, 255, 255, 0.5),
+    					rgba(255, 255, 255, 0.5)), 
+    	url('../img/Dresden.jpg');
+    }
+    #en:after{
+    	content: "EN";
+    }
+    #de:after{
+    	content: "DE";
+    }
 
+}
+/*for large screens*/
 @media all and (min-width: 1244px){
 	header{
 		background-image: 
@@ -54,12 +70,20 @@ header {
     					rgba(255, 255, 255, 0.5)), 
     	url('../img/Dresden.jpg');
     }
+    #en:after{
+    	content: "ENGLISH";
+    }
+    #de:after{
+    	content: "DEUTSCH";
+    }
+
 }
 footer {
 	border-top: 2px solid black;
 	background-color: rgba(230, 230, 230, 0.9);
 	bottom: 0;
 }
+
 footer a {
 	font-size: 2em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -79,6 +103,7 @@ img {
 	padding: 0;
 	box-shadow: 2px 2px 1px #888888;
 }
+
 iframe {
 	margin: 1em auto;
 	display: block;
