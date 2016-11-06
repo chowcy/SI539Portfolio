@@ -70,8 +70,8 @@ footer a:hover {
 	text-decoration: none;
 }
 aside {
-	padding-left: 50px;
-	margin: 0 auto;
+	padding-left: 20px;
+	display: inline;
 }
 img {
 	margin: 0em auto 2em auto;
