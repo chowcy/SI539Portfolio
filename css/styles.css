@@ -76,6 +76,12 @@ header {
     #de:after{
     	content: "DEUTSCH";
     }
+    #linkedin:after {
+    	content: " LinkedIn";
+    }
+    #resume:before {
+    	content: " Download ";
+    }
 
 }
 footer {
