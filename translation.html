@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset = "UTF-8">    
+	<meta charset="UTF-8">    
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--Font Awesome Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<!--own style sheet-->
+	<!--my custom style sheet-->
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="icon" href="img/M.jpg">
 	<title>Cathy Chow | Translations</title>
 </head>
 <body>
 	<header>
-		<ul class="nav navbar-nav language-toggle">
-				<li><a href="translation.html">EN</a></li>
-				<li><a href="DE/translation.html" hreflang="de">DE</a></li>
+		<div><a id="skiptomain" href="#main">Skip to Main Content</a></div>
+		<ul aria-label="language toggle" class="nav navbar-nav language-toggle">
+				<li><a href="translation.html" hreflang="en"><img src="img/English.png" alt="" class="icon"><span aria-label="english" id="en"></span></a></li>
+				<li><a href="DE/translation.html" hreflang="de"><img src="img/German.png" alt=""  class="icon"><span aria-label="german" id="de"></span></a></li>
 		</ul>
 		<h1>CATHY CHOW</h1>
+
 		<nav>
 			<ul class="nav navbar-nav">
-				<li><a href="home.html" reflang="en" ><h2>Home</h2></a></li>
+				<li><a href="home.html" hreflang="en"><h2>Home</h2></a></li>
 				<li><a href="translation.html" hreflang="en" class="active"><h2>Translation Portfolio</h2></a></li>
 				<li><a href="gallery.html" hreflang="en"><h2>Gallery</h2></a></li>
 				<li><a href="contact.html" hreflang="en"><h2>Contact</h2></a></li>
 			</ul>
 		</nav>
 	</header>
+	<main id="main">
 	<div class="container">
 		<div class="row">
 			<section class="col-xs-12 col-lg-12">
@@ -38,20 +41,21 @@
 					For example, the first time I attended, the German team worked on transcribing and translating a handwritten letter from a
 					WWII <span lang="de">Theresienstadt</span> Concentration Camp survivor. What an exciting project! I have since participated three times and have had
 					so much fun every time. Check out the <a href="https://www.lrc.lsa.umich.edu/translate-a-thon/" hreflang="en" target="_blank">Language Resource Center's Translate-a-thon website</a>! I am featured in one of their videos.</p>
-					<iframe width="427" height="240" src="https://www.youtube.com/embed/PChn-wCiutA" align="center" frameborder="0" allowfullscreen>UM World Class: Translation for a Cause</iframe>
+					<iframe width="427" height="240" src="https://www.youtube.com/embed/PChn-wCiutA" allowfullscreen>UM World Class: Translation for a Cause</iframe>
 			</section>
 		</div>
 		<div class="row">
 			<section id="Submission" class="col-xs-12" >
 				<h3>Canon Translation Review Submission</h3>
-				<p>I submitted a German-to-English translation of <span lang="de">"Moni malt ein Meisterwerk,"</span> a short story by Michael Ende, to the Canon Translation Review in 2014. Although I never heard back from them, it was certainly a fun project! <a href="files/moni.html">See my submission here!</a></p>
+				<p>In 2014, I submitted an original German-to-English translation of <span lang="de">"Moni malt ein Meisterwerk,"</span> a short story by Michael Ende, to the Canon Translation Review, which is a literary magazine dedicated to publishing translations by undergraduate and graduate students at the University of Michigan. Although my translation was never published, it was certainly a fun project to work on! Michael Ende's stories are always a joy to read, and this short story had never been translated before. It's about a creative girl named Moni who paints a picture with the help of her older friend, the narrator. <a href="files/moni.html">See my submission here!</a></p>
 			</section>
 		</div>
 	</div>
+	</main>
 	<footer>
 		<ul class="external-links">
-		<li><a href="https://www.linkedin.com/in/cathy-chow-5541aa95" hreflang="en"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
-		<li><a href=""><i class="fa fa-file-pdf-o"></i>Download Resume</a></li>
+		<li><a href="https://www.linkedin.com/in/cathy-chow-5541aa95" hreflang="en" target="_blank"><i class="fa fa-linkedin-square"></i><span id="linkedin"></span></a></li>
+		<li><a href="files/resume.pdf"><i class="fa fa-file-pdf-o"></i><span id="resume"></span>Resum&eacute;</a></li>
 		</ul>
 		<aside>&copy; Cathy Chow, last updated Nov 5, 2016</aside>
 	</footer>	
