@@ -9,9 +9,10 @@ h1 {
 	font-weight: bolder;
 }
 
-h2 {
+h2, h3 {
 	text-align: center;
 }
+
 h5 {
 	font-style: italic;
 }
@@ -54,14 +55,12 @@ header {
 footer {
 	background-color: rgba(225, 190, 240, 0.9);
 	bottom: 0;
-	clear: both;
-	padding-bottom: 1em;
 }
 footer a {
 	font-size: 2em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: rgba(0, 119, 181, 1);
-	padding: 0 1em;
+	padding: 0 0.5em;
 }
 footer a:hover {
 	text-decoration: none;
@@ -82,14 +81,15 @@ img {
 	float: none;
 	background-color: rgba(230, 230, 230, 0.9); 
 }
-.gallery-image {
-	margin: 5px;
-	padding: 0;
+.external-links {
+	margin: 0 auto;
+	text-align: center;
 }
 .external-links li{
 	list-style-type: none;
 	display: inline-block;
 }
+
 
 
 
