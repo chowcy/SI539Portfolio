@@ -32,7 +32,10 @@ aside {
 	position: absolute;
 	right: 5px;
 }
-
+p a {
+	text-decoration: underline;
+	color: black;
+}
 section {
 	border: 1px solid gray;
 	padding-left: 10px;
