@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--Font Awesome Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!---Link to use lightbox, by Lokesh Dhakar-->
+	<link href="../css/lightbox.css" rel="stylesheet">
 	<!--my custom style sheet-->
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="icon" href="../img/m.jpg">
@@ -17,8 +19,8 @@
 	<header>
 		<div><a id="skiptomain" href="#main">Zum Hauptinhalt springen</a></div>
 		<ul aria-label="language toggle" class="nav navbar-nav language-toggle">
-				<li><a href="../gallery.html" hreflang="en"><img src="../img/english.png" alt="american flag" class="icon"><span aria-label="english" id="en"></span></a></li>
-				<li><a href="gallery.html" hreflang="de"><img src="../img/german.png" alt="german flag" class="icon"><span aria-label="german" id="de"></span></a></li>
+				<li><a href="../gallery.html" hreflang="en"><img src="../img/english.png" alt="english icon" class="icon"><span aria-label="english" id="en"></span></a></li>
+				<li><a href="gallery.html" hreflang="de"><img src="../img/german.png" alt="german icon" class="icon"><span aria-label="german" id="de"></span></a></li>
 		</ul>
 		<h1>CATHY CHOW</h1>
 
@@ -39,24 +41,23 @@
 				</p>
 			</section>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="../img/oreo_burrito.jpg" alt="schwarze und weiße Katze in Decken gewickelt" class="gallery-image img-responsive img-rounded">
+				<a href="../img/oreo_burrito.jpg" data-lightbox="my-cats" data-title="Oreo in der Decke"><img src="../img/oreo_burrito.jpg" alt="schwarze und weiße Katze in Decken gewickelt" class="gallery-image img-responsive img-rounded"></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="../img/donny_sink.jpg" alt="graue und weiße Katze im Waschbecken gelegen" class="gallery-image img-responsive img-rounded ">
+				<a href="../img/donny_sink.jpg" data-lightbox="my-cats" data-title="Donny im Waschbecken"><img src="../img/donny_sink.jpg" alt="graue und weiße Katze im Waschbecken gelegen" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="../img/ginger_kitten.jpg" alt="schön aussehende orange Kätzchen" class="gallery-image img-responsive img-rounded ">
+				<a href="../img/ginger_kitten.jpg" data-lightbox="my-cats" data-title="Orange Kätzchen in Deutschland"><img src="../img/ginger_kitten.jpg" alt="schön aussehende orange Kätzchen" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="../img/donny_couch.jpg" alt="auf dem Sofa ruhig schlafende graue und weiße Katze" class="gallery-image img-responsive img-rounded ">
+				<a href="../img/donny_couch.jpg" data-lightbox="my-cats" data-title="Donny schläft auf dem Sofa"><img src="../img/donny_couch.jpg" alt="auf dem Sofa ruhig schlafende graue und weiße Katze" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="../img/kittens_playing.jpg" alt="Kätzen spielen mit gelbem Faden" class="gallery-image img-responsive img-rounded ">
+				<a href="../img/kittens_playing.jpg" data-lightbox="my-cats" data-title="Spielende Kätzen die ich betreut habe" ><img src="../img/kittens_playing.jpg" alt="Kätzen spielen mit gelbem Faden" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="../img/donny_window.jpg" alt="grauer und weißer Kater schaut durch das Fenster" class="gallery-image img-responsive img-rounded ">
-			</div> 
-
+				<a href="../img/donny_window.jpg" data-lightbox="my-cats" data-title="Donny vom Fenster"><img src="../img/donny_window.jpg" alt="grauer und weißer Kater schaut durch das Fenster" class="gallery-image img-responsive img-rounded "></a>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -65,73 +66,16 @@
 		<li><a href="../files/resume.pdf"><i class="fa fa-file-pdf-o"></i><span id="resume"></span>Lebenslauf</a></li>
 		</ul>
 		<aside>&copy; Cathy Chow, aktualisiert am 5. Nov, 2016</aside>
-	</footer>			
+	</footer>
+	<!--Lightbox script-->
+	<script src="../js/lightbox-plus-jquery.js">
+	</script>	
+	<!--Lightbox Options-->
+	<script>	
+		lightbox.option({
+	      'wrapAround': true,
+	      'albumLabel': "Bild %1 von %2"
+	    })
+	</script>			
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="de">
-<head>
-	<meta charset = "UTF-8">    
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/normalize.css">-->
-	<!-- Latest compiled and minified CSS -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-	<!--Font Awesome Icons-->
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> -->
-	<!--own style sheet-->
-	<!--<link rel="stylesheet" href="../css/styles.css">
-	<link rel="icon" href="../img/M.jpg">
-	<title>Cathy Chow | Galerie</title>
-</head>
-<body>
-	<header>
-		<ul class="nav navbar-nav language-toggle">
-				<li><a href="../gallery.html" hreflang="en">EN</a></li>
-				<li><a href="gallery.html" hreflang="de">DE</a></li>
-		</ul>
-		<h1>CATHY CHOW</h1>
-		<nav>
-			<ul class="nav navbar-nav">
-				<li><a href="home.html" hreflang="de"> <h2>Startseite</h2></a></li>
-				<li><a href="translation.html" hreflang="de"><h2>Übersetzung</h2></a></li>
-				<li><a href="gallery.html" hreflang="de" class="active"><h2>Galerie</h2></a></li>
-				<li><a href="contact.html" hreflang="de"><h2>Kontaktinfo</h2></a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="container">
-		<section class="col-sm-12">
-			<h3>Fotos von Katzen</h3>
-			<p>Warum Katzen?, fragen Sie sich wohl. Naja, Ich brauche eine Fotogalerie auf meiner Seite, und es gibt nichts, was ich lieber hier haben würde als Fotos von Katzen. Es gibt kein Wesen eleganter, verspielter, süßer und komischer als eine Katze. Lassen Sie sich diese Fotos durchblättern. Sie sind Fotos von Katzen, die ich mal im Leben kennengelernt habe.
-			</p>
-		</section>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<img src="../img/oreo_burrito.jpg" alt="schwarze und weiße Katze in Decken gewickelt" class="gallery-image img-responsive img-rounded">
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<img src="../img/donny_sink.jpg" alt="graue und weiße Katze im Waschbecken gelegen" class="gallery-image img-responsive img-rounded ">
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<img src="../img/ginger_kitten.jpg" alt="schön aussehende orange Kätzchen" class="gallery-image img-responsive img-rounded ">
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<img src="../img/donny_couch.jpg" alt="auf dem Sofa ruhig schlafende graue und weiße Katze" class="gallery-image img-responsive img-rounded ">
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<img src="../img/kittens_playing.jpg" alt="Kätzen spielen mit gelbem Faden" class="gallery-image img-responsive img-rounded ">
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<img src="../img/donny_window.jpg" alt="grauer und weißer Kater schaut durch das Fenster" class="gallery-image img-responsive img-rounded ">
-		</div> 
-
-	</div>
-	<footer>
-		<ul class="external-links">
-		<li><a href="https://www.linkedin.com/in/cathy-chow-5541aa95" hreflang="de"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
-		<li><a href="" hreflang="de"><i class="fa fa-file-pdf-o"></i>Lebenslauf herunterladen</a></li>
-		</ul>
-		<aside>&copy; Cathy Chow, aktualisiert am 5. Nov 2016</aside>
-	</footer>	
-</body>
-</html> -->

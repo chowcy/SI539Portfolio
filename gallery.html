@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--Font Awesome Icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<!---Link to use lightbox-->
+	<!---Link to use lightbox, by Lokesh Dhakar-->
 	<link href="css/lightbox.css" rel="stylesheet">
 	<!--my custom style sheet-->
 	<link rel="stylesheet" href="css/styles.css">
@@ -19,8 +19,8 @@
 	<header>
 		<div><a id="skiptomain" href="#main">Skip to Main Content</a></div>
 		<ul aria-label="language toggle" class="nav navbar-nav language-toggle">
-				<li><a href="gallery.html" hreflang="en"><img src="img/english.png" alt="" class="icon"><span aria-label="english" id="en"></span></a></li>
-				<li><a href="DE/gallery.html" hreflang="de"><img src="img/german.png" alt=""  class="icon"><span aria-label="german" id="de"></span></a></li>
+				<li><a href="gallery.html" hreflang="en"><img src="img/english.png" alt="english icon" class="icon"><span aria-label="english" id="en"></span></a></li>
+				<li><a href="de/gallery.html" hreflang="de"><img src="img/german.png" alt="german icon"  class="icon"><span aria-label="german" id="de"></span></a></li>
 		</ul>
 		<h1>CATHY CHOW</h1>
 
@@ -43,23 +43,23 @@
 				</p>
 			</section>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="img/oreo_burrito.jpg" data-lightbox="my-cats" ><img src="img/oreo_burrito.jpg" alt="black and white cat wrapped in blanket" class="gallery-image img-responsive img-rounded"></a>
+				<a href="img/oreo_burrito.jpg" data-lightbox="my-cats" data-title="Oreo in a blanket"><img src="img/oreo_burrito.jpg" alt="black and white cat wrapped in blanket" class="gallery-image img-responsive img-rounded"></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="img/donny_sink.jpg" data-lightbox="my-cats" ><img src="img/donny_sink.jpg" alt="gray and white laying in sink" class="gallery-image img-responsive img-rounded "></a>
+				<a href="img/donny_sink.jpg" data-lightbox="my-cats" data-title="Donny in the sink"><img src="img/donny_sink.jpg" alt="gray and white laying in sink" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="img/ginger_kitten.jpg" data-lightbox="my-cats" ><img src="img/ginger_kitten.jpg" alt="ginger kitten looking pretty" class="gallery-image img-responsive img-rounded "></a>
+				<a href="img/ginger_kitten.jpg" data-lightbox="my-cats" data-title="ginger kitten in Germany"><img src="img/ginger_kitten.jpg" alt="ginger kitten looking pretty" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="img/donny_couch.jpg" data-lightbox="my-cats" ><img src="img/donny_couch.jpg" alt="gray and white cat peacefully sleeping on the couch" class="gallery-image img-responsive img-rounded "></a>
+				<a href="img/donny_couch.jpg" data-lightbox="my-cats" data-title="Donny sleeping on the couch"><img src="img/donny_couch.jpg" alt="gray and white cat peacefully sleeping on the couch" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="img/kittens_playing.jpg" data-lightbox="my-cats" ><img src="img/kittens_playing.jpg" alt="kittens dynamically playing with string" class="gallery-image img-responsive img-rounded "></a>
+				<a href="img/kittens_playing.jpg" data-lightbox="my-cats" data-title="Kittens I catsat playing" ><img src="img/kittens_playing.jpg" alt="kittens dynamically playing with string" class="gallery-image img-responsive img-rounded "></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="img/donny_window.jpg" data-lightbox="my-cats" ><img src="img/donny_window.jpg" alt="gray and white looking out the window" class="gallery-image img-responsive img-rounded "></a>
-				</div> 
+				<a href="img/donny_window.jpg" data-lightbox="my-cats" data-title="Donny from the window"><img src="img/donny_window.jpg" alt="gray and white looking out the window" class="gallery-image img-responsive img-rounded "></a>
+			</div> 
 
 		</div>
 	</main>
@@ -70,6 +70,14 @@
 		</ul>
 		<aside>&copy; Cathy Chow, last updated Nov 5, 2016</aside>
 	</footer>	
-	<script src="js/lightbox-plus-jquery.js"></script>		
+	<!--Lightbox script-->
+	<script src="js/lightbox-plus-jquery.js">
+	</script>	
+	<!--Lightbox Options-->
+	<script>	
+		lightbox.option({
+	      'wrapAround': true
+	    })
+	</script>
 </body>
 </html>
